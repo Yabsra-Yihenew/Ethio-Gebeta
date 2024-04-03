@@ -862,3 +862,47 @@ void monthly_SMS_pack()
         }
     }
 }
+
+void Flexi_Mobile_Package()
+{
+    string x;
+    cout << "\t\tMobile Voice Package" << endl;
+    cout << "1.  Enter '1' For Flexi Daily package" << endl;
+    cout << "2.  Enter '2' For Flexi Weekly package" << endl;
+    cout << "3.  Enter '3' For Flexi Monthly package" << endl;
+    cout << "To go one  step back Enter '*'" << endl;
+    cout << "To go two  step back Enter '**'" << endl;
+    cout << "To go back to the first menu Enter '0'" << endl;
+    cout << "Option: ";
+    cin >> x;
+    system("CLS");
+    if (x == "1")
+    {
+        flexi_daily_pack();
+    }
+    else if (x == "2")
+    {
+        flexi_weekly_pack();
+    }
+    else if (x == "3")
+    {
+        flexi_monthly_pack();
+    }
+    else if (x == "*")
+    {
+        ForYourself();
+    }
+    else if (x == "**")
+    {
+        services();
+    }
+    else if (x == "0")
+    {
+        Firstmenu();
+    }
+    else
+    {
+        cout << "__________Wrong input, please try again.__________" << endl;
+        Flexi_Mobile_Package();
+    }
+}
