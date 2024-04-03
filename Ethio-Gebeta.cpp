@@ -505,3 +505,133 @@ void SMS_Package()
         SMS_Package();
     }
 }
+
+void daily_SMS_pack()
+{
+    int x;
+    cout << "\n\n**************DAILY SMS PACKAGE**************" << endl;
+    cout << "\t\tEnter '2' Birr 2 for 18 SMS" << endl;
+    cout << "\t\tEnter '3' Birr 3 for 35 SMS" << endl;
+    cout << "\t\tEnter '5' Birr 5 for 70 SMS" << endl;
+    cout << "\t\t\tTo go one  step back Enter '1'" << endl;
+    cout << "\t\t\tTo go two  steps back Enter '9'" << endl;
+    cout << "\t\t\tTo go three  steps back Enter '6'" << endl;
+    cout << "\t\t\tTo go back to the first menu Enter '0'" << endl;
+    cin >> x;
+    system("CLS");
+    if (y - x > 0)
+    {
+        if (x == 2)
+        {
+            cout << "\n\nCongratulations!!! You Have Successfully Bought Your Daily SMS Package, you have 18 SMS to be expired 24 hrs" << endl;
+            cout << "\t\tYour Balance is now " << y - 2 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 3)
+        {
+            cout << "\n\nCongratulations!!! You Have Successfully Bought Your Daily SMS Package, you have 35 SMS to be expired 24 hrs" << endl;
+            cout << "\t\tYour Balance is now " << y - 3 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 5)
+        {
+            cout << "\n\nCongratulations!!! You Have Successfully Bought Your Daily SMS Package, you have 70 SMS to be expired 24 hrs" << endl;
+            cout << "\t\tYour Balance is now " << y - 5 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 1)
+        {
+            SMS_Package();
+        }
+        else if (x == 9)
+        {
+            ForYourself();
+        }
+        else if (x == 6)
+        {
+            services();
+        }
+        else if (x == 0)
+        {
+            Firstmenu();
+        }
+        else
+        {
+            cout << "__________Wrong input, please try again.__________" << endl;
+            daily_SMS_pack();
+        }
+    }
+    else
+    {
+        int c;
+        cout << "\n\tDear user your Balance is insufficient for this service. " << endl;
+        cout << "\t\tTo get CREDIT Please Enter '0': ";
+        cin >> c;
+        system("CLS");
+        if (c == 0)
+        {
+            credit();
+        }
+        else
+        {
+            cout << "\n\t\t\tTo go one  step back Enter '*'" << endl;
+            cout << "\t\t\tTo go two  steps back Enter '**'" << endl;
+            cout << "\t\t\tTo go three  steps back Enter '***'" << endl;
+            cout << "\t\t\tTo go back to the first menu Enter '0'" << endl;
+            cout << "Option: ";
+            cin >> x;
+            system("CLS");
+            if (x == 1)
+            {
+                SMS_Package();
+            }
+            else if (x == 2)
+            {
+                ForYourself();
+            }
+            else if (x == 3)
+            {
+                services();
+            }
+            else if (x == 0)
+            {
+                Firstmenu();
+            }
+            else
+            {
+                cout << "__________Wrong input, please try again.__________" << endl;
+                daily_SMS_pack();
+            }
+        }
+    }
+}
