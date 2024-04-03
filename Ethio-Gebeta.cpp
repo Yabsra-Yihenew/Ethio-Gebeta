@@ -461,3 +461,47 @@ void DataPackage()
         DataPackage();
     }
 }
+
+void SMS_Package()
+{
+    int x;
+    cout << "\n\n*********************MOBILE SMS PACKAGE*********************" << endl;
+    cout << "\t 1.Enter '1' For Daily SMS package" << endl;
+    cout << "\t 2.Enter '2' For Weekly SMS package" << endl;
+    cout << "\t 3.Enter '3' For Monthly SMS package" << endl;
+    cout << "\t\tTo go one  step back Enter '7'" << endl;
+    cout << "\t\tTo go two  step back Enter '8'" << endl;
+    cout << "\t\tTo go back to the first menu Enter '0'" << endl;
+    cout << "Option: ";
+    cin >> x;
+    system("CLS");
+    if (x == 1)
+    {
+        daily_SMS_pack();
+    }
+    else if (x == 2)
+    {
+        weekly_SMS_pack();
+    }
+    else if (x == 3)
+    {
+        monthly_SMS_pack();
+    }
+    else if (x == 7)
+    {
+        ForYourself();
+    }
+    else if (x == 8)
+    {
+        services();
+    }
+    else if (x == 0)
+    {
+        Firstmenu();
+    }
+    else
+    {
+        cout << "__________Wrong input, please try again.__________" << endl;
+        SMS_Package();
+    }
+}
