@@ -408,3 +408,56 @@ void VoicePackage()
         VoicePackage();
     }
 }
+
+void DataPackage()
+{
+    string x;
+    cout << "\n\n*********************MOBILE DATA PACKAGE*********************" << endl;
+    cout << "\t\t 1. Enter '1' For Daily Data package" << endl;
+    cout << "\t\t 2. Enter '2' For Weekly Data package" << endl;
+    cout << "\t\t 3. Enter '3' For Monthly Data package" << endl;
+    cout << "\t\t 4. Enter '4' For Night Data Package" << endl;
+    cout << "\t\t\tTo go one  step back Enter '*'" << endl;
+    cout << "\t\t\tTo go two  step back Enter '**'" << endl;
+    cout << "\t\t\tTo go back to the first menu Enter '0'" << endl;
+    cout << "Option: ";
+    cin >> x;
+    system("CLS");
+    if (x == "1")
+    {
+        daily_Data_pack();
+    }
+    else if (x == "2")
+    {
+        weekly_Data_pack();
+    }
+    else if (x == "2")
+    {
+        weekend_Data_pack();
+    }
+    else if (x == "3")
+    {
+        monthly_Data_pack();
+    }
+    else if (x == "4")
+    {
+        night_Data_pack();
+    }
+    else if (x == "*")
+    {
+        ForYourself();
+    }
+    else if (x == "**")
+    {
+        services();
+    }
+    else if (x == "0")
+    {
+        Firstmenu();
+    }
+    else
+    {
+        cout << "__________Wrong input, please try again.__________" << endl;
+        DataPackage();
+    }
+}
