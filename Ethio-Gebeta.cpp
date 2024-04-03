@@ -906,3 +906,232 @@ void Flexi_Mobile_Package()
         Flexi_Mobile_Package();
     }
 }
+void flexi_daily_pack()
+{
+    int x;
+    cout << "\n**************FLEXI DAILY PACKAGE**************" << endl;
+    cout << "\tEnter '15' Birr 15 for 300 Flexi Units" << endl;
+    cout << "\tEnter '20' Birr 20 for 410 Flexi Units" << endl;
+    cout << "\t\tTo go one  step back Enter '1'" << endl;
+    cout << "\t\tTo go two  steps back Enter '2'" << endl;
+    cout << "\t\tTo go three  steps back Enter '3'" << endl;
+    cout << "\t\tTo go back to the first menu Enter '0'" << endl;
+    cin >> x;
+    system("CLS");
+    if (y - x >= 0)
+    {
+        if (x == 15)
+        {
+            cout << "\n\tCongratulations!!! You Have Successfully Bought Your Flexi Daily Package, you have 300 Flexi units to be expired 24 hrs" << endl;
+            cout << "\t\tYour Balance is now " << y - 15 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 20)
+        {
+            cout << "\n\tCongratulations!!! You Have Successfully Bought Your Flexi Daily Package, you have 410 Flexi Units to be expired 24 hrs" << endl;
+            cout << "\t\tYour Balance is now " << y - 20 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 1)
+        {
+            Flexi_Mobile_Package();
+        }
+        else if (x == 2)
+        {
+            ForYourself();
+        }
+        else if (x == 3)
+        {
+            services();
+        }
+        else if (x == 0)
+        {
+            Firstmenu();
+        }
+        else
+        {
+            cout << "__________Wrong input, please try again.__________" << endl;
+            flexi_daily_pack();
+        }
+    }
+
+    else
+    {
+        int c;
+        cout << "Dear user your Balance is insufficient for this service. " << endl;
+        cout << "To get CREDIT Please Enter '0': ";
+        cin >> c;
+        system("CLS");
+        if (c == 0)
+        {
+            credit();
+        }
+        else
+        {
+            int c;
+            cout << "\t\t\tTo go one  step back Enter '1'" << endl;
+            cout << "\t\t\tTo go two  steps back Enter '2'" << endl;
+            cout << "\t\t\tTo go three  steps back Enter '3'" << endl;
+            cout << "\t\t\tTo go back to the first menu Enter '0'" << endl;
+            cout << "Option: ";
+            cin >> c;
+            system("CLS");
+            if (x == 1)
+            {
+                Flexi_Mobile_Package();
+            }
+            else if (x == 2)
+            {
+                ForYourself();
+            }
+            else if (x == 3)
+            {
+                services();
+            }
+            else if (x == 0)
+            {
+                Firstmenu();
+            }
+            else
+            {
+                cout << "__________Wrong input, please try again.__________" << endl;
+                flexi_daily_pack();
+            }
+        }
+    }
+}
+
+void flexi_weekly_pack()
+{
+    int x;
+    cout << "\n**************FLEXI WEEKLY PACKAGE**************" << endl;
+    cout << "\tEnter '50' Birr 50 for 1150 SMS" << endl;
+    cout << "\tEnter '80 Birr 80 for 1900 SMS" << endl;
+    cout << "\t\tTo go one  step back Enter '1'" << endl;
+    cout << "\t\tTo go two  steps back Enter '2'" << endl;
+    cout << "\t\tTo go three  steps back Enter '3'" << endl;
+    cout << "\t\tTo go back to the first menu Enter '0'" << endl;
+    cout << "Option: ";
+    cin >> x;
+    system("CLS");
+    if (y - x >= 0)
+    {
+        if (x == 50)
+        {
+            cout << "\n\tCongratulations!!! You Have Successfully Bought Your Flexi Daily Package, you have 1150 Flexi units to be expired 24 hrs" << endl;
+            cout << "\t\tYour Balance is now " << y - 50 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 80)
+        {
+            cout << "\n\tCongratulations!!! You Have Successfully Bought Your Flexi Daily Package, you have 1900 Flexi Units to be expired 24 hrs" << endl;
+            cout << "\t\tYour Balance is now " << y - 80 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 1)
+        {
+            Flexi_Mobile_Package();
+        }
+        else if (x == 2)
+        {
+            ForYourself();
+        }
+        else if (x == 3)
+        {
+            services();
+        }
+        else if (x == 0)
+        {
+            Firstmenu();
+        }
+        else
+        {
+            cout << "__________Wrong input, please try again.__________" << endl;
+            flexi_weekly_pack();
+        }
+    }
+    else
+    {
+        int c;
+        cout << "\n\tDear user your Balance is insuficient for this service. " << endl;
+        cout << "\t\tTo get CREDIT Please Enter '0': ";
+        cin >> c;
+        system("CLS");
+        if (c == 0)
+        {
+            credit();
+        }
+        else
+        {
+            cout << "\t\t\tTo go one  step back Enter '1'" << endl;
+            cout << "\t\t\tTo go two  steps back Enter '2'" << endl;
+            cout << "\t\t\tTo go three  steps back Enter '3'" << endl;
+            cout << "\t\t\tTo go back to the first menu Enter '0'" << endl;
+            cout << "Option: ";
+            cin >> x;
+            system("CLS");
+            if (x == 1)
+            {
+                Flexi_Mobile_Package();
+            }
+            else if (x == 2)
+            {
+                ForYourself();
+            }
+            else if (x == 3)
+            {
+                services();
+            }
+            else if (x == 0)
+            {
+                Firstmenu();
+            }
+            else
+            {
+                cout << "__________Wrong input, please try again.__________" << endl;
+                flexi_weekly_pack();
+            }
+        }
+    }
+}
+
