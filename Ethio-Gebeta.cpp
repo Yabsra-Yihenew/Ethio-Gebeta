@@ -281,3 +281,27 @@ void developers()
         cout << "You are not Member of the Group";
     }
 }
+void language()
+{
+    
+    string x;
+    cout << "\n\n***************Select language***************" << endl;
+    cout << "\t\t1.For English" << endl;
+    cout << "\t\t2.Afaan Oromoof" << endl;
+    cout << "\t\t3.For Amaharic" << endl;
+    cout << "\t\t4.For tigirenga" << endl;
+    cout << "Option: ";
+    cin >> x;
+    if (x == "1")
+    {
+
+        cout << "\n\nYou Have successfully changed the language" << endl;
+        cout << "\t\t PLEASE DAIL AGAIN ";
+    }
+    else if (x == "2")
+        cout << "	Qooqni filattan milkaa'inaan jijjirameera ,irra deebia bilbilaa" << endl;
+    else if (x == "3")
+        cout << "you have successfully changed the language to Amharic" << endl;
+    else if (x == "4")
+        cout << "	you have successfully changed the language to Tigregna " << endl;
+}
