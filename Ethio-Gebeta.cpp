@@ -113,3 +113,27 @@ void Firstmenu()
     }
 }
 
+void AboutOurServices()
+{
+    string a, b;
+    ifstream infile("pro.txt");
+    if (infile.is_open())
+    {
+        for (int i = 0; i <= 30; i++)
+        {
+            getline(infile, a);
+            cout << a;
+        }
+    }
+    infile.close();
+    cout << "\n\n\n\t\tTo go back please enter '0'\t\t";
+    cin >> b;
+    system("CLS");
+    if (b == "0")
+        Firstmenu();
+    else
+    {
+        cout << "__________Wrong input, please try again.__________" << endl;
+        AboutOurServices();
+    }
+}
