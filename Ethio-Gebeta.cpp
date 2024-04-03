@@ -305,3 +305,59 @@ void language()
     else if (x == "4")
         cout << "	you have successfully changed the language to Tigregna " << endl;
 }
+void ForYourself()
+{
+    string x;
+    cout << "\t\tFor Yourself" << endl;
+    cout << "1. Please Enter '1' For Voice package" << endl;
+    cout << "2. Please Enter '2' For Data package" << endl;
+    cout << "3. Please Enter '3' For SMS package" << endl;
+    cout << "4. Please Enter '4' For Flexi Mobile Package" << endl;
+    cout << "5. Please Enter '5' For Mobile Voice + Data + SMS Package" << endl;
+    cout << "6. Please Enter '6' For Premium Unlimited Mobile Packages" << endl;
+    cout << "7. Please Enter '7' For Recurring Monthly Packages" << endl;
+    cout << "To go back to the first menu Enter '*'" << endl;
+    cin >> x;
+    system("CLS");
+    if (x == "1")
+    {
+        VoicePackage();
+    }
+    else if (x == "2")
+    {
+        DataPackage();
+    }
+    else if (x == "3")
+    {
+        SMS_Package();
+    }
+    else if (x == "4")
+    {
+        Flexi_Mobile_Package();
+    }
+    else if (x == "5")
+    {
+        Mobile_Voice_Data_SMS_Package();
+    }
+    else if (x == "6")
+    {
+        Premium_Unlimited_Mobile_Package();
+    }
+    else if (x == "7")
+    {
+        recuring();
+    }
+    else if (x == "*")
+    {
+        services();
+    }
+    else if (x == "0")
+    {
+        Firstmenu();
+    }
+    else
+    {
+        cout << "__________Wrong input, please try again.__________" << endl;
+        services();
+    }
+}
