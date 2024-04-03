@@ -137,3 +137,41 @@ void AboutOurServices()
         AboutOurServices();
     }
 }
+
+void services()
+{
+    string x;
+    cout << "\t\t**********Services**********" << endl;
+    cout << "1. Enter '1' For Yourself" << endl;
+    cout << "2. Enter '2' For Offering a Gift" << endl;
+    cout << "3. Enter '3' To change The Language" << endl;
+    cout << "4. Enter '4' For other services" << endl;
+    cout << "To go back to the first menu Enter '0'" << endl;
+    cin >> x;
+    system("CLS");
+    if (x == "1")
+    {
+        ForYourself();
+    }
+    else if (x == "2")
+    {
+        ForOfferingGift();
+    }
+    else if (x == "3")
+    {
+        language();
+    }
+    else if (x == "4")
+    {
+        Other_services_for_you();
+    }
+    else if (x == "0")
+    {
+        Firstmenu();
+    }
+    else
+    {
+        cout << "__________Wrong input, please try again.__________" << endl;
+        services();
+    }
+}
