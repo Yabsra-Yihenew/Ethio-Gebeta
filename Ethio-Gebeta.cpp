@@ -635,3 +635,117 @@ void daily_SMS_pack()
         }
     }
 }
+
+void weekly_SMS_pack()
+{
+    int x;
+    cout << "\n\n************** WEEKLY SMS PACKAGE *************" << endl;
+    cout << "\tEnter'10' Birr 10 for 140 SMS" << endl;
+    cout << "\tEnter '15' Birr 15 for 283 SMS" << endl;
+    cout << "\t\tTo go one  step back Enter '1'" << endl;
+    cout << "\t\tTo go two  steps back Enter '2'" << endl;
+    cout << "\t\tTo go three  steps back Enter '3'" << endl;
+    cout << "\t\tTo go back to the first menu Enter '0'" << endl;
+    cout << "Option: ";
+    cin >> x;
+    system("CLS");
+    if (y - x >= 0)
+    {
+        if (x == 10)
+        {
+            cout << "\n\tCongratulations!!! You Have Successfully Bought Your Daily SMS Package, you have 140 SMS to be expired 24 hrs" << endl;
+            cout << "\t\tYour Balance is now " << y - 10 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 15)
+        {
+            cout << "\n\tCongratulations!!! You Have Successfully Bought Your Daily SMS Package, you have 283 SMS to be expired 24 hrs" << endl;
+            cout << "\t\tYour Balance is now " << y - 15 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 1)
+        {
+            VoicePackage();
+        }
+        else if (x == 2)
+        {
+            ForYourself();
+        }
+        else if (x == 3)
+        {
+            services();
+        }
+        else if (x == 0)
+        {
+            Firstmenu();
+        }
+        else
+        {
+            cout << "__________Wrong input, please try again.__________" << endl;
+            weekly_SMS_pack();
+        }
+    }
+    else
+    {
+        int c;
+        cout << "\n\n\tDear user your Balance is insuficient for this service. " << endl;
+        cout << "\t\tTo get CREDIT Please Enter '0': ";
+        cin >> c;
+        system("CLS");
+        if (c == 0)
+        {
+            credit();
+        }
+        else
+        {
+            cout << "\n\t\t\tTo go one  step back Enter '1'" << endl;
+            cout << "\t\t\tTo go two  steps back Enter '2'" << endl;
+            cout << "\t\t\tTo go three  steps back Enter '3'" << endl;
+            cout << "\t\t\tTo go back to the first menu Enter '0'" << endl;
+            cout << "Option: ";
+            cin >> x;
+            system("CLS");
+            if (x == 1)
+            {
+                SMS_Package();
+            }
+            else if (x == 2)
+            {
+                ForYourself();
+            }
+            else if (x == 3)
+            {
+                services();
+            }
+            else if (x == 0)
+            {
+                Firstmenu();
+            }
+            else
+            {
+                cout << "__________Wrong input, please try again.__________" << endl;
+                daily_SMS_pack();
+            }
+        }
+    }
+}
