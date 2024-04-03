@@ -214,3 +214,37 @@ void Other_services_for_you()
         Other_services_for_you();
     }
 }
+
+void credit()
+{
+    string a;
+    float x;
+    cout << "\n\n\t\tPlease Enter The Amount of Credit You Would like to get " << endl;
+    cout << "\t\tAmount:  ";
+    cin >> x;
+    system("CLS");
+    if (x > 100)
+    {
+        cout << "\n\n\t\tYou cannot get this amount of credit according to your ECONOMIC capacity" << endl;
+        cout << "\t\tYou can get a credit less than 100$" << endl;
+        credit();
+    }
+    else
+    {
+        cout << "\n\n\t\tDear user, " << x << "$ credit is successfully provided to you" << endl;
+        cout << "\t\tYour Balance is now " << y + x << "$\n If you wish to get back to the MENU Enter '0'\n\t\tIf you wish to EXIT Press any KEY" << endl;
+        cout << "Option: ";
+        cin >> a;
+        system("CLS");
+        if (a == "0")
+        {
+            Firstmenu();
+        }
+        else
+        {
+            cout << "****************************************************************************************************\n";
+            cout << "*******************************************THANK YOU!!!!!*******************************************\n";
+            cout << "****************************************************************************************************\n";
+        }
+    }
+}
