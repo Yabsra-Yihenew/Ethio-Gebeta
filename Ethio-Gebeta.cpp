@@ -1248,3 +1248,51 @@ void flexi_monthly_pack()
     }
 }
 
+void Mobile_Voice_Data_SMS_Package()
+{
+    string x;
+    cout << "\n\n***************MOBILE VOICE, DATA AND SMS PACKAGE****************" << endl;
+    cout << "1.  Enter 'a' For Good Morning package" << endl;
+    cout << "2.  Enter 'b' For Daily Voice, Data and SMS package" << endl;
+    cout << "3.  Enter 'c' For Weekly Voice, Data and SMS package" << endl;
+    cout << "3.  Enter 'c' For Monthly Voice, Data and SMS package" << endl;
+    cout << "To go one  step back Enter '1'" << endl;
+    cout << "To go two  step back Enter '2'" << endl;
+    cout << "To go back to the first menu Enter '0'" << endl;
+    cin >> x;
+    system("CLS");
+    if (x == "1")
+    {
+        good_Morning_VDS_pack();
+    }
+    else if (x == "2")
+    {
+        daily_VDS_pack();
+    }
+    else if (x == "3")
+    {
+        weekly_VDS_pack();
+    }
+
+    else if (x == "4")
+    {
+        monthly_VDS_pack();
+    }
+    else if (x == "*")
+    {
+        ForYourself();
+    }
+    else if (x == "**")
+    {
+        services();
+    }
+    else if (x == "0")
+    {
+        Firstmenu();
+    }
+    else
+    {
+        cout << "__________Wrong input, please try again.__________" << endl;
+        Mobile_Voice_Data_SMS_Package();
+    }
+}
