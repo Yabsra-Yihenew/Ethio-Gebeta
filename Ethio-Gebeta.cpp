@@ -361,3 +361,50 @@ void ForYourself()
         services();
     }
 }
+void VoicePackage()
+{
+    string x;
+    cout << "\t\tMobile Voice Package" << endl;
+    cout << "1.  Enter '1' For Daily Voice package" << endl;
+    cout << "2.  Enter '2' For Weekly voice package" << endl;
+    cout << "3.  Enter '3' For Monthly voice package" << endl;
+    cout << "4.  Enter '4' For Night voice Package" << endl;
+    cout << "To go one  step back Enter '*'" << endl;
+    cout << "To go two  step back Enter '**'" << endl;
+    cout << "To go back to the first menu Enter '0'" << endl;
+    cin >> x;
+    system("CLS");
+    if (x == "1")
+    {
+        daily_Voice_pack();
+    }
+    else if (x == "2")
+    {
+        weekly_Voice_pack();
+    }
+    else if (x == "3")
+    {
+        monthly_Voice_pack();
+    }
+    else if (x == "4")
+    {
+        night_Voice_pack();
+    }
+    else if (x == "*")
+    {
+        ForYourself();
+    }
+    else if (x == "**")
+    {
+        services();
+    }
+    else if (x == "0")
+    {
+        Firstmenu();
+    }
+    else
+    {
+        cout << "__________Wrong input, please try again.__________" << endl;
+        VoicePackage();
+    }
+}
