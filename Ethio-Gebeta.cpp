@@ -86,3 +86,23 @@ void MR_Unlimited_Premium_Pack();
 void MR_Unlimited_Premium_Plus_Pack();
 void MR_LimitedPremiumPlusPack();
 void MR_FlexiPack();
+
+void Firstmenu()
+{
+    string x;
+    cout << "\t\t  Welcome To Ethio Gebeta" << endl;
+    cout << "1. Enter '1' For Services" << endl;
+    cout << "2. Enter '2' For More Information About  Our Services." << endl;
+    cin >> x;
+    system("cls");
+    if (x == "1")
+        services();
+    else if (x == "2")
+        AboutOurServices();
+    else
+    {
+        cout << "__________Wrong input, please try again.__________" << endl;
+        Firstmenu();
+    }
+}
+
