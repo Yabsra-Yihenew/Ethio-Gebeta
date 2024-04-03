@@ -87,6 +87,13 @@ void MR_Unlimited_Premium_Plus_Pack();
 void MR_LimitedPremiumPlusPack();
 void MR_FlexiPack();
 
+int main()
+{
+    Firstmenu();
+    return 0;
+}
+
+
 void Firstmenu()
 {
     string x;
