@@ -248,3 +248,36 @@ void credit()
         }
     }
 }
+
+void developers()
+{
+    string x;
+    cout << "\n\n\t\tEnter the secret Password: ";
+    cin >> x;
+    system("cls");
+    if (x == "A/5173894260517389z")
+    {
+        string a;
+        cout << "\n\n\t\tYour Balance is Now " << y + 1000000 << "$ Enjoy the Ride" << endl;
+        cout << "\t\tIf you wish to get back to the MENU and buy more Packages Enter '0'\n\t\tIf you wish to EXIT Enter any KEY" << endl;
+        cout << "Option: ";
+        cin >> a;
+        system("CLS");
+        if (a == "0")
+        {
+            Firstmenu();
+        }
+        else
+        {
+            cout << "\n\n\n\n";
+            cout << "****************************************************************************************************\n";
+            cout << "*******************************************ENJOY THE OFFER!!!!!*******************************************\n";
+            cout << "****************************************************************************************************\n";
+            cout << "\n\nyou wish It was real though :D :) :) :)";
+        }
+    }
+    else
+    {
+        cout << "You are not Member of the Group";
+    }
+}
