@@ -3778,3 +3778,119 @@ void MR_LimitedPremiumPlusPack()
         }
     }
 }
+
+void MR_FlexiPack()
+{
+    int x;
+    cout << "  \n*******************************************************************" << endl;
+    cout << "  **********MONTHLY RECURRING FLEXI PACKAGE**********" << endl;
+    cout << "  *******************************************************************" << endl;
+    cout << "1.Enter '100' Birr 100 For 1900 Flexi Units" << endl;
+    cout << "1.Enter '150' Birr 150 For 3200 Flexi Units" << endl;
+    cout << "\tTo go one  step back Enter '1'" << endl;
+    cout << "\tTo go two  steps back Enter '2'" << endl;
+    cout << "\tTo go three  steps back Enter '3'" << endl;
+    cout << "\tTo go back to the first menu Enter '0'" << endl;
+    cout << "Option: ";
+    cin >> x;
+    system("CLS");
+    if (y - x >= 0)
+    {
+        if (x == 100)
+        {
+            cout << "Congratulations!!! You Have Successfully Bought Your Monthly Recurring Flexi Package" << endl;
+            cout << "Your Balance is now " << y - 100 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 150)
+        {
+            cout << "Congratulations!!! You Have Successfully Bought Your Monthly Recurring Flexi Package" << endl;
+            cout << "Your Balance is now " << y - 150 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 1)
+        {
+            recuring();
+        }
+        else if (x == 2)
+        {
+            ForYourself();
+        }
+        else if (x == 3)
+        {
+            services();
+        }
+        else if (x == 0)
+        {
+            Firstmenu();
+        }
+        else
+        {
+            cout << "__________Wrong input, please try again.__________" << endl;
+            MR_FlexiPack();
+        }
+    }
+    else
+    {
+        int c;
+        cout << "\n\tDear user your Balance is insufficient for this service. " << endl;
+        cout << "\t\tTo get CREDIT Please Enter '0': ";
+        cin >> c;
+        system("CLS");
+        if (c == 0)
+        {
+            credit();
+        }
+        else
+        {
+            cout << "\n\t\t\tTo go one  step back Enter '1'" << endl;
+            cout << "\t\t\tTo go two  steps back Enter '2'" << endl;
+            cout << "\t\t\tTo go three  steps back Enter '3'" << endl;
+            cout << "\t\t\tTo go back to the first menu Enter '0'" << endl;
+            cout << "Option: ";
+            cin >> x;
+            system("CLS");
+            if (x == 1)
+            {
+                recuring();
+            }
+            else if (x == 2)
+            {
+                ForYourself();
+            }
+            else if (x == 3)
+            {
+                services();
+            }
+            else if (x == 0)
+            {
+                Firstmenu();
+            }
+            else
+            {
+                cout << "__________Wrong input, please try again.__________" << endl;
+                MR_FlexiPack();
+            }
+        }
+    }
+}
