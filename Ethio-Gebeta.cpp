@@ -3894,3 +3894,137 @@ void MR_FlexiPack()
         }
     }
 }
+
+void daily_Voice_pack()
+{
+    int x;
+    cout << "\n***********************************************" << endl;
+    cout << "********** DAILY MOBILE VOICE PACKAGE**********" << endl;
+    cout << "***********************************************" << endl;
+    cout << "1.Enter '3' Birr 3 for 10 Min" << endl;
+    cout << "2.Enter '5' Birr 5 for 17 Min" << endl;
+    cout << "3.Enter '10' Birr 10 for 35 Min" << endl;
+    cout << "\tTo go one  step back Enter '1'" << endl;
+    cout << "\tTo go two  steps back Enter '2'" << endl;
+    cout << "\tTo go three  steps back Enter '3'" << endl;
+    cout << "\tTo go back to the first menu Enter '0'" << endl;
+    cout << "Option: ";
+    cin >> x;
+    system("CLS");
+    if (y - x >= 0)
+    {
+        if (x == 3)
+        {
+            cout << "Congratulations!!! You Have Successfully Bought Your Daily Voice Package" << endl;
+            cout << "Your Balance is now " << y - 3 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 5)
+        {
+            cout << "Congratulations!!! You Have Successfully Bought Your Daily Voice Package" << endl;
+            cout << "Your Balance is now " << y - 5 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 10)
+        {
+            cout << "Congratulations!!! You Have Successfully Bought Your Daily Voice Package" << endl;
+            cout << "Your Balance is now " << y - 10 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 1)
+        {
+            VoicePackage();
+        }
+        else if (x == 2)
+        {
+            ForYourself();
+        }
+        else if (x == 3)
+        {
+            services();
+        }
+        else if (x == 0)
+        {
+            Firstmenu();
+        }
+        else
+        {
+            cout << "__________Wrong input, please try again.__________" << endl;
+            daily_Voice_pack();
+        }
+    }
+    else
+    {
+        int c;
+        cout << "\n\tDear user your Balance is insufficient for this service. " << endl;
+        cout << "\t\tTo get CREDIT Please Enter '0': ";
+        cin >> c;
+        system("CLS");
+        if (c == 0)
+        {
+            credit();
+        }
+        else
+        {
+            int x;
+            cout << "\n\t\t\tTo go one  step back Enter '1'" << endl;
+            cout << "\t\t\tTo go two  steps back Enter '2'" << endl;
+            cout << "\t\t\tTo go three  steps back Enter '3'" << endl;
+            cout << "\t\t\tTo go back to the first menu Enter '0'" << endl;
+            cout << "Option: ";
+            cin >> x;
+            system("CLS");
+            if (x == 1)
+            {
+                VoicePackage();
+            }
+            else if (x == 2)
+            {
+                ForYourself();
+            }
+            else if (x == 3)
+            {
+                services();
+            }
+            else if (x == 0)
+            {
+                Firstmenu();
+            }
+            else
+            {
+                cout << "__________Wrong input, please try again.__________" << endl;
+                daily_Voice_pack();
+            }
+        }
+    }
+}
