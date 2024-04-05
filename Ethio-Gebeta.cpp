@@ -2136,3 +2136,52 @@ void monthly_VDS_pack()
         }
     }
 }
+void Premium_Unlimited_Mobile_Package()
+{
+    string x;
+    cout << "\n**************PREMIUM UNLIMITED MOBILE PACKAGE****************" << endl;
+    cout << "\t1.Enter '1' For Unlimited Data Package" << endl;
+    cout << "\t2.Enter '2' For Unlimited Voice Package" << endl;
+    cout << "\t3.Enter '3' For Unlimited Voice and Data Package" << endl;
+    cout << "\t3.Enter '4' For Premium Plus Monthly Mobile Plans" << endl;
+    cout << "\t\tTo go one  step back Enter '*'" << endl;
+    cout << "\t\tTo go two  step back Enter '**'" << endl;
+    cout << "\t\tTo go back to the first menu Enter '0'" << endl;
+    cout << "Option: ";
+    cin >> x;
+    system("CLS");
+    if (x == "1")
+    {
+        Unlimited_Data_Package();
+    }
+    else if (x == "2")
+    {
+        Unlimited_Voice_Package();
+    }
+    else if (x == "3")
+    {
+        Unlimited_Voice_Data_Package();
+    }
+
+    else if (x == "4")
+    {
+        Premium_Plus_Monthly_Mobile_Plans();
+    }
+    else if (x == "*")
+    {
+        ForYourself();
+    }
+    else if (x == "**")
+    {
+        services();
+    }
+    else if (x == "0")
+    {
+        Firstmenu();
+    }
+    else
+    {
+        cout << "__________Wrong input, please try again.__________" << endl;
+        Premium_Unlimited_Mobile_Package();
+    }
+}
