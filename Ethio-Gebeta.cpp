@@ -2436,3 +2436,137 @@ void Unlimited_Data_Package()
         }
     }
 }
+
+void Unlimited_Voice_Package()
+{
+    int x;
+    cout << "\n**********UNLIMITED VOICE PACKAGE**********" << endl;
+    cout << "\t\t1.Enter '440' Weekly unlimited Voice Package:" << endl;
+    cout << "\t Birr 440-->With Free Unlimited SMS" << endl;
+    cout << "\t\t2.Enter '836' Bi-Weekly unlimited Voice Package" << endl;
+    cout << "\nBirr 836-->With Free Unlimited SMS" << endl;
+    cout << "\t\t3.Enter '1510' Monthly unlimited Voice Package:" << endl;
+    cout << "\tBirr 1510-->With Free Unlimited SMS" << endl;
+    cout << "\t\tTo go one  step back Enter '1'" << endl;
+    cout << "\t\tTo go two  steps back Enter '2'" << endl;
+    cout << "\t\tTo go three  steps back Enter '3'" << endl;
+    cout << "\t\tTo go back to the first menu Enter '0'" << endl;
+    cout << "Option: ";
+    cin >> x;
+    system("CLS");
+    if (y - x >= 0)
+    {
+        if (x == 440)
+        {
+            cout << "\n\tCongratulations!!! You Have Successfully Bought Your Weekly unlimited Voice Package" << endl;
+            cout << "\t\tYour Balance is now " << y - 440 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 836)
+        {
+            cout << "\n\tCongratulations!!! You Have Successfully Bought Your Bi-Weekly unlimited Voice Package" << endl;
+            cout << "\t\tYour Balance is now " << y - 836 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 1510)
+        {
+            cout << "\n\tCongratulations!!! You Have Successfully Bought Your Monthly unlimited Voice Package" << endl;
+            cout << "\t\tYour Balance is now " << y - 1510 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 1)
+        {
+            VoicePackage();
+        }
+        else if (x == 2)
+        {
+            ForYourself();
+        }
+        else if (x == 3)
+        {
+            services();
+        }
+        else if (x == 0)
+        {
+            Firstmenu();
+        }
+        else
+        {
+            cout << "__________Wrong input, please try again.__________" << endl;
+            Unlimited_Voice_Package();
+        }
+    }
+    else
+    {
+        int c;
+        cout << "\n\tDear user your Balance is insufficient for this service. " << endl;
+        cout << "\t\tTo get CREDIT Please Enter '0': ";
+        cin >> c;
+        system("CLS");
+        if (c == 0)
+        {
+            credit();
+        }
+        else
+        {
+            cout << "\n\t\t\tTo go one  step back Enter '*'" << endl;
+            cout << "\t\t\tTo go two  steps back Enter '**'" << endl;
+            cout << "\t\t\tTo go three  steps back Enter '***'" << endl;
+            cout << "\t\t\tTo go back to the first menu Enter '0'" << endl;
+            cout << "Option: ";
+            cin >> x;
+            system("CLS");
+            if (x == 1)
+            {
+                Premium_Unlimited_Mobile_Package();
+            }
+            else if (x == 2)
+            {
+                ForYourself();
+            }
+            else if (x == 3)
+            {
+                services();
+            }
+            else if (x == 0)
+            {
+                Firstmenu();
+            }
+            else
+            {
+                cout << "__________Wrong input, please try again.__________" << endl;
+                Unlimited_Voice_Package();
+            }
+        }
+    }
+}
