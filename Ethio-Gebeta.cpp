@@ -2704,3 +2704,53 @@ void Unlimited_Voice_Data_Package()
         }
     }
 }
+
+void recuring()
+{
+    string x;
+    cout << " \n*******************MONTHLY RECURRING PACKAGE*****************" << endl;
+    cout << "\t1.Monthly Recurring Voice Package" << endl;
+    cout << "\t2.Monthly Recurring Data Package" << endl;
+    cout << "\t3.Monthly Recurring Voice Plus Data Package" << endl;
+    cout << "\t4.Monthly Recurring Unlimited Premium Package" << endl;
+    cout << "\t5.Monthly Recurring Unlimited Premium Plus Package" << endl;
+    cout << "\t6.Monthly Recurring Limited Premium Plus Package" << endl;
+    cout << "\t7.Monthly Recurring Flexi Package" << endl;
+    cout << "\t\tTo go one  step back Enter '*'" << endl;
+    cout << "\t\tTo go two  step back Enter '**'" << endl;
+    cout << "\t\tTo go back to the first menu Enter '0'" << endl;
+    cout << "Option: ";
+    cin >> x;
+    system("CLS");
+    if (x == "1")
+        MR_VoicePack();
+    else if (x == "2")
+        MR_DataPack();
+    else if (x == "3")
+        MR_VoicePlusDataPack();
+    else if (x == "4")
+        MR_Unlimited_Premium_Pack();
+    else if (x == "5")
+        MR_Unlimited_Premium_Plus_Pack();
+    else if (x == "6")
+        MR_LimitedPremiumPlusPack();
+    else if (x == "7")
+        MR_FlexiPack();
+    else if (x == "*")
+    {
+        ForYourself();
+    }
+    else if (x == "**")
+    {
+        services();
+    }
+    else if (x == "0")
+    {
+        Firstmenu();
+    }
+    else
+    {
+        cout << "__________Wrong input, please try again.__________" << endl;
+        recuring();
+    }
+}
