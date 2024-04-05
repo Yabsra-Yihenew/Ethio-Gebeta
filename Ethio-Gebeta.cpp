@@ -1296,3 +1296,138 @@ void Mobile_Voice_Data_SMS_Package()
         Mobile_Voice_Data_SMS_Package();
     }
 }
+
+void good_Morning_VDS_pack()
+{
+    int x;
+    cout << "\n**********GOOD MORNING PACKAGES**********" << endl;
+    cout << "\t\Enter '2' Birr 2 for 8 min + 5 SMS" << endl;
+    cout << "\t\Enter '4' Birr 2 for 2 MB + 5 SMS" << endl;
+    cout << "\t\Enter '3' Birr 3 for 8 min+ 25 MB +10 SMS" << endl;
+    cout << "\t\tTo go one  step back Enter '4'" << endl;
+    cout << "\t\tTo go two  steps back Enter '5'" << endl;
+    cout << "\t\tTo go three  steps back Enter '6'" << endl;
+    cout << "\t\tTo go back to the first menu Enter '0'" << endl;
+    cout << "Option: ";
+    cin >> x;
+    system("CLS");
+    if (y - x > 0)
+    {
+        if (x == 2)
+        {
+            cout << "\n\n************************Congratulations!!! You Have Successfully Bought your Good morning Package************************" << endl;
+            cout << "\t\tDear customer, as per your request the new service offer Good morning Package 8 min +5 SMS  is added to your service number. the service offer is effective from 12:00 am to 6:00 " << endl;
+            cout << "\t\tYour Balance is now " << y - 2 << " Birr" << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 4)
+        {
+            cout << "\n\n\tCongratulations!!! You Have Successfully Bought Your Good morning package" << endl;
+            cout << "\t\tDear customer, as per your request the new service offer \n Good morning package 2 MB + 5 SMS is added to your service number. the service offer is effective from 12:00 am to 6:00 " << endl;
+            cout << "\t\tYour Balance is now " << y - 2 << " Birr" << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 3)
+        {
+            cout << "\n\n************************Congratulations!!! You Have Successfully Bought Your Good morning package************************" << endl;
+            cout << "\t\tDear customer, as per your request the new service offer \n Good morning package  8 min + 25 MB + 10 SMS is added to your service number. the service offer is effective from 12:00 am to 6:00 " << endl;
+            cout << "\t\tYour Balance is now " << y - 3 << " Birr" << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+
+        else if (x == 1)
+        {
+            Mobile_Voice_Data_SMS_Package();
+        }
+        else if (x == 2)
+        {
+            ForYourself();
+        }
+        else if (x == 3)
+        {
+            services();
+        }
+        else if (x == 0)
+        {
+            Firstmenu();
+        }
+        else
+        {
+            cout << "__________Wrong input, please try again.__________" << endl;
+            good_Morning_VDS_pack();
+        }
+    }
+    else
+    {
+        int c;
+        cout << "\n\tDear user your Balance is insufficient for this service. " << endl;
+        cout << "\t\tTo get CREDIT Please Enter '0' : ";
+        cin >> c;
+        system("CLS");
+        if (c == 0)
+        {
+            credit();
+        }
+        else
+        {
+            cout << "\t\t\tTo go one  step back Enter '1'" << endl;
+            cout << "\t\t\tTo go two  steps back Enter '2'" << endl;
+            cout << "\t\t\tTo go three  steps back Enter '3'" << endl;
+            cout << "\t\t\tTo go back to the first menu Enter '0'" << endl;
+            cout << "Option: ";
+            cin >> x;
+            system("CLS");
+            if (x == 1)
+            {
+                VoicePackage();
+            }
+            else if (x == 2)
+            {
+                ForYourself();
+            }
+            else if (x == 3)
+            {
+                services();
+            }
+            else if (x == 0)
+            {
+                Firstmenu();
+            }
+            else
+            {
+                cout << "__________Wrong input, please try again.__________" << endl;
+                good_Morning_VDS_pack();
+            }
+        }
+    }
+}
