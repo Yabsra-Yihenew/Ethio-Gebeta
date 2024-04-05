@@ -1616,3 +1616,187 @@ void daily_VDS_pack()
         }
     }
 }
+
+void weekly_VDS_pack()
+{
+    int x;
+    cout << "\n**********WEEKLY  MOBILE VOICE + DATA + SMS PACKAGE**********" << endl;
+    cout << "Enter '50' Birr 50 for 20 SMS + 60 Min + 500 MB" << endl;
+    cout << "Enter '55' Birr 55 for 20 SMS + 80 Min + 500 MB" << endl;
+    cout << "Enter '81' Birr 81 for 20 SMS + 60 Min + 1 MMB" << endl;
+    cout << "Enter '86' Birr 86 for 20 SMS + 80 Min + 1 GB" << endl;
+    cout << "Enter '120' Birr 120 for 20 SMS + 60 min + 2 GB" << endl;
+    cout << "Enter '133' Birr 133 for 20 SMS + 80 min + 2  GB" << endl;
+    cout << "To go one  step back Enter '1'" << endl;
+    cout << "To go two  steps back Enter '2'" << endl;
+    cout << "To go three  steps back Enter '3'" << endl;
+    cout << "To go back to the first menu Enter '0'" << endl;
+    cout << "Option: ";
+    cin >> x;
+    system("CLS");
+    if (y - x > 0)
+    {
+        if (x == 50)
+        {
+            cout << "\n\tCongratulations!!! You Have Successfully Bought weekly  Mobile Voice+Data+SMS package " << endl;
+            cout << "\t\tYour Balance is now " << y - 50 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 55)
+        {
+            cout << "\n\tCongratulations!!! You Have Successfully Bought  weekly Mobile Voice+Data+SMS package" << endl;
+            cout << "\t\tYour Balance is now " << y - 55 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 81)
+        {
+            cout << "\n\tCongratulations!!! You Have Successfully Bought  weekly Mobile Voice+Data+SMS package" << endl;
+            cout << "\t\tYour Balance is now " << y - 81 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+
+        else if (x == 86)
+        {
+            cout << "\n\tCongratulations!!! You Have Successfully Bought weekly Mobile Voice+Data+SMS package" << endl;
+            cout << "\t\tYour Balance is now " << y - 86 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 120)
+        {
+            cout << "\n\tCongratulations!!! You Have Successfully Bought weekly Mobile Voice+Data+SMS package" << endl;
+            cout << "\t\tYour Balance is now " << y - 120 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 133)
+        {
+            cout << "\n\tCongratulations!!! You Have Successfully Bought weekly Mobile Voice+Data+SMS package" << endl;
+            cout << "\t\tYour Balance is now " << y - 133 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+
+        else if (x == 1)
+        {
+            VoicePackage();
+        }
+        else if (x == 2)
+        {
+            ForYourself();
+        }
+        else if (x == 3)
+        {
+            services();
+        }
+        else if (x == 0)
+        {
+            Firstmenu();
+        }
+        else
+        {
+            cout << "__________Wrong input, please try again.__________" << endl;
+            weekly_VDS_pack();
+        }
+    }
+    else
+    {
+        int c;
+        cout << "\n\tDear user your Balance is insufficient for this service. " << endl;
+        cout << "\t\tTo get CREDIT Please Enter '0': ";
+        cin >> c;
+        system("CLS");
+        if (c == 0)
+        {
+            credit();
+        }
+        else
+        {
+            cout << "\n\t\t\tTo go one  step back Enter '*'" << endl;
+            cout << "\t\t\tTo go two  steps back Enter '**'" << endl;
+            cout << "\t\t\tTo go three  steps back Enter '***'" << endl;
+            cout << "\t\t\tTo go back to the first menu Enter '0'" << endl;
+            cout << "Option: ";
+            cin >> x;
+            system("CLS");
+            if (x == 1)
+            {
+                Mobile_Voice_Data_SMS_Package();
+            }
+            else if (x == 2)
+            {
+                ForYourself();
+            }
+            else if (x == 3)
+            {
+                services();
+            }
+            else if (x == 0)
+            {
+                Firstmenu();
+            }
+            else
+            {
+                cout << "__________Wrong input, please try again.__________" << endl;
+                weekly_VDS_pack();
+            }
+        }
+    }
+}
