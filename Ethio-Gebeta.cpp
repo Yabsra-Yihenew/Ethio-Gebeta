@@ -2754,3 +2754,203 @@ void recuring()
         recuring();
     }
 }
+
+void MR_VoicePack()
+{
+    int x;
+    cout << "********** MONTHLY RECURRING VOICE PACKAGE**********" << endl;
+    cout << "\t1.Enter '35' Birr 35 for 100 Min" << endl;
+    cout << "\t2.Enter '50' Birr 50 for 150 Min" << endl;
+    cout << "\t3.Enter '95' Birr 95 for 300 Min" << endl;
+    cout << "\t4.Enter '120' Birr 120 for 400 Min" << endl;
+    cout << "\t5.Enter '140' Birr 140 for 500 Min" << endl;
+    cout << "\t6.Enter '165' Birr 165 for 600 Min" << endl;
+    cout << "\t7.Enter '200' Birr 200 for 750 Min" << endl;
+    cout << "\t\tTo go one  step back Enter '1'" << endl;
+    cout << "\t\tTo go two  steps back Enter '2'" << endl;
+    cout << "\t\tTo go three  steps back Enter '3'" << endl;
+    cout << "\t\tTo go back to the first menu Enter '0'" << endl;
+    cout << "Option: ";
+    cin >> x;
+    system("CLS");
+    if (y - x >= 0)
+    {
+        if (x == 35)
+        {
+            cout << "\n\tCongratulations!!! You Have Successfully Bought Your Monthly Recuring Voice Package" << endl;
+            cout << "\t\tYour Balance is now " << y - 35 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 50)
+        {
+            cout << "\n\tCongratulations!!! You Have Successfully Bought Your Monthly Recuring Voice Package" << endl;
+            cout << "\t\tYour Balance is now " << y - 50 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 95)
+        {
+            cout << "\n\tCongratulations!!! You Have Successfully Bought Your Monthly Recuring Voice Package" << endl;
+            cout << "\t\tYour Balance is now " << y - 95 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+
+        else if (x == 120)
+        {
+            cout << "\n\tCongratulations!!! You Have Successfully Bought Your Monthly Recuring Voice Package" << endl;
+            cout << "\t\tYour Balance is now " << y - 120 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 140)
+        {
+            cout << "Congratulations!!! You Have Successfully Bought Your Monthly Recuring Voice Package" << endl;
+            cout << "Your Balance is now " << y - 140 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 165)
+        {
+            cout << "\n\tCongratulations!!! You Have Successfully Bought Your Monthly Recuring Voice Package" << endl;
+            cout << "\t\tYour Balance is now " << y - 165 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 200)
+        {
+            cout << "\n\tCongratulations!!! You Have Successfully Bought Your Monthly Recuring Voice Package" << endl;
+            cout << "\t\tYour Balance is now " << y - 200 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 1)
+        {
+            recuring();
+        }
+        else if (x == 2)
+        {
+            ForYourself();
+        }
+        else if (x == 3)
+        {
+            services();
+        }
+        else if (x == 0)
+        {
+            Firstmenu();
+        }
+        else
+        {
+            cout << "__________Wrong input, please try again.__________" << endl;
+            MR_VoicePack();
+        }
+    }
+    else
+    {
+        int c;
+        cout << "\n\tDear user your Balance is insufficient for this service. " << endl;
+        cout << "\t\tTo get CREDIT Please Enter '0': ";
+        cin >> c;
+        system("CLS");
+        if (c == 0)
+        {
+            credit();
+        }
+        else
+        {
+            cout << "\n\t\t\tTo go one  step back Enter '1'" << endl;
+            cout << "\t\t\tTo go two  steps back Enter '2'" << endl;
+            cout << "\t\t\tTo go three  steps back Enter '3'" << endl;
+            cout << "\t\t\tTo go back to the first menu Enter '0'" << endl;
+            cout << "Option: ";
+            cin >> x;
+            system("CLS");
+            if (x == 1)
+            {
+                recuring();
+            }
+            else if (x == 2)
+            {
+                ForYourself();
+            }
+            else if (x == 3)
+            {
+                services();
+            }
+            else if (x == 0)
+            {
+                Firstmenu();
+            }
+            else
+            {
+                cout << "__________Wrong input, please try again.__________" << endl;
+                MR_VoicePack();
+            }
+        }
+    }
+}
