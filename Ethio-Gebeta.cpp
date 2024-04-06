@@ -4601,3 +4601,177 @@ void night_Voice_pack()
         }
     }
 }
+
+void daily_Data_pack()
+{
+    int x;
+    cout << "***********************************************" << endl;
+    cout << "********** Daily Mobile Internet Package  **********" << endl;
+    cout << "***********************************************" << endl;
+    cout << "1.Enter '4' Birr 3 for 30 MB" << endl;
+    cout << "2.Enter '5' Birr 5 for 70 MB" << endl;
+    cout << "3.Enter '10' Birr 10 for 145 MB" << endl;
+    cout << "4.Enter '15' Birr 15 for 250 MB" << endl;
+    cout << "5.Enter '28' Birr 28 for 500 MB" << endl;
+    cout << "To go one  step back Enter '1'" << endl;
+    cout << "To go two  steps back Enter '2'" << endl;
+    cout << "To go three  steps back Enter '3'" << endl;
+    cout << "To go back to the first menu Enter '0'" << endl;
+    cout << "Option: ";
+    cin >> x;
+    system("CLS");
+    if (y - x >= 0)
+    {
+        if (x == 4)
+        {
+            cout << "************************Congratulations!!! You Have Successfully Bought Your Daily Internet Package************************" << endl;
+            cout << "Dear customer, as per your request the new service offer \n Daily  Data Package 30 MB is added to your service number. the service offer is effective from 12:00 am to 6:00 " << endl;
+            cout << "Your Balance is now " << y - 3 << " Birr" << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 5)
+        {
+            cout << "Congratulations!!! You Have Successfully Bought Your Daily Internet Package" << endl;
+            cout << "Dear customer, as per your request the new service offer \n Daily Data Package 70 MB is added to your service number. the service offer is effective from 12:00 am to 6:00 " << endl;
+            cout << "Your Balance is now " << y - 5 << " Birr" << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 10)
+        {
+            cout << "************************Congratulations!!! You Have Successfully Bought Your Daily Internet Package************************" << endl;
+            cout << "Dear customer, as per your request the new service offer \n Daily Data Package 145 MB is added to your service number. the service offer is effective from 12:00 am to 6:00 " << endl;
+            cout << "Your Balance is now " << y - 10 << " Birr" << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 15)
+        {
+            cout << "************************Congratulations!!! You Have Successfully Bought Your Daily Package************************" << endl;
+            cout << "Dear customer, as per your request the new service offer \n Daily Data Package 250 MB is added to your service number. the service offer is effective from 12:00 am to 6:00 " << endl;
+            cout << "Your Balance is now " << y - 15 << " Birr" << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 28)
+        {
+            cout << "************************Congratulations!!! You Have Successfully Bought Your Daily Internet Package************************" << endl;
+            cout << "Dear customer, as per your request the new service offer \n Daily Data Package 500 MB is added to your service number. the service offer is effective from 12:00 am to 6:00 " << endl;
+            cout << "Your Balance is now " << y - 28 << " Birr" << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 1)
+        {
+            DataPackage();
+        }
+        else if (x == 2)
+        {
+            ForYourself();
+        }
+        else if (x == 3)
+        {
+            services();
+        }
+        else if (x == 3)
+        {
+            Firstmenu();
+        }
+        else
+        {
+            cout << "__________Wrong input, please try again.__________" << endl;
+            daily_Data_pack();
+        }
+    }
+    else
+    {
+        int c;
+        cout << "\n\tDear user your Balance is insufficient for this service. " << endl;
+        cout << "\t\tTo get CREDIT Please Enter '0': ";
+        cin >> c;
+        system("CLS");
+        if (c == 0)
+        {
+            credit();
+        }
+        else
+        {
+            int x;
+            cout << "\n\t\t\tTo go one  step back Enter '1'" << endl;
+            cout << "\t\t\tTo go two  steps back Enter '2'" << endl;
+            cout << "\t\t\tTo go three  steps back Enter '3'" << endl;
+            cout << "\t\t\tTo go back to the first menu Enter '0'" << endl;
+            cout << "Option: ";
+            cin >> x;
+            system("CLS");
+            if (x == 1)
+            {
+                Premium_Unlimited_Mobile_Package();
+            }
+            else if (x == 2)
+            {
+                ForYourself();
+            }
+            else if (x == 3)
+            {
+                services();
+            }
+            else if (x == 0)
+            {
+                Firstmenu();
+            }
+            else
+            {
+                cout << "__________Wrong input, please try again.__________" << endl;
+                Unlimited_Voice_Data_Package();
+            }
+        }
+    }
+}
+
