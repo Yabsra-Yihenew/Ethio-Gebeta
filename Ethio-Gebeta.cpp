@@ -4851,3 +4851,341 @@ void MR_DataPack()
         }
     }
 }
+void MR_VoicePlusDataPack()
+{
+    int x;
+    cout << "\n**********MONTHLY RECURRING VOICE + DATA PACKAGE**********" << endl;
+    cout << "\t1.Enter '157' Birr 157 for 100 Min + 2 GB" << endl;
+    cout << "\t2.Enter '214' Birr 214 for 300 Min + 2 GB" << endl;
+    cout << "\t3.Enter '238' Birr 238 for 400 Min + 2 GB" << endl;
+    cout << "\t4.Enter '257' Birr 257 for 500 Min + 2 GB" << endl;
+    cout << "\t5.Enter '360' Birr 360 for 1000 min + 2 GB" << endl;
+    cout << "\t6.Enter '270' Birr 270 for 100 min + 4  GB" << endl;
+    cout << "\t7.Enter '328' Birr 328 for 300 Min + 4 GB" << endl;
+    cout << "\t8.Enter '352' Birr 352 for 400 Min + 4 GB" << endl;
+    cout << "\t9.Enter '371' Birr 371 for 500 Min + 4 GB" << endl;
+    cout << "\t10.Enter '466' Birr 466 for 1000 Min + 4 GB" << endl;
+    cout << "\t11.Enter '1514' Birr 1514 for 100 min + Unlimited Internet" << endl;
+    cout << "12.Enter '1525' Birr 1525 for 300 min + Unlimited Internet" << endl;
+    cout << "13.Enter '1549' Birr 1549 for 400 Min + Unlimited Internet" << endl;
+    cout << "14.Enter '1568' Birr 1568 for 500 min + Unlimited Internet" << endl;
+    cout << "15.Enter '1563' Birr 1563 for 100 min + Unlimited Internet" << endl;
+    cout << "To go one  step back Enter '1'" << endl;
+    cout << "To go two  steps back Enter '2'" << endl;
+    cout << "To go three  steps back Enter '3'" << endl;
+    cout << "To go back to the first menu Enter '0'" << endl;
+    cout << "Option: ";
+    cin >> x;
+    system("CLS");
+    if (y - x >= 0)
+    {
+        if (x == 157)
+        {
+            cout << "Congratulations!!! You Have Successfully Bought Monthly  Reeciring Voice+Data package " << endl;
+            cout << "Your Balance is now " << y - 157 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 214)
+        {
+            cout << "Congratulations!!! You Have Successfully Bought  monthly Recuring Voice+Data package" << endl;
+            cout << "Your Balance is now " << y - 214 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 238)
+        {
+            cout << "Congratulations!!! You Have Successfully Bought  Monthly Recuring Voice+Data+SMS package" << endl;
+            cout << "Your Balance is now " << y - 238 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+
+        else if (x == 257)
+        {
+            cout << "Congratulations!!! You Have Successfully Bought Monthly Recuring Voice+Data package" << endl;
+            cout << "Your Balance is now " << y - 257 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 360)
+        {
+            cout << "Congratulations!!! You Have Successfully Bought Monthly Recuring Voice+Data package" << endl;
+            cout << "Your Balance is now " << y - 360 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 270)
+        {
+            cout << "Congratulations!!! You Have Successfully Bought Monthly Recuring Voice+Data package" << endl;
+            cout << "Your Balance is now " << y - 270 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 328)
+        {
+            cout << "Congratulations!!! You Have Successfully Bought  Monthly Recuring Voice+Data+SMS package" << endl;
+            cout << "Your Balance is now " << y - 328 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+
+        else if (x == 352)
+        {
+            cout << "Congratulations!!! You Have Successfully Bought Monthly Recuring Voice+Data package" << endl;
+            cout << "Your Balance is now " << y - 352 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 371)
+        {
+            cout << "Congratulations!!! You Have Successfully Bought Monthly Recuring Voice+Data package" << endl;
+            cout << "Your Balance is now " << y - 371 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 466)
+        {
+            cout << "Congratulations!!! You Have Successfully Bought Monthly Recuring Voice+Data package" << endl;
+            cout << "Your Balance is now " << y - 466 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 1514)
+        {
+            cout << "Congratulations!!! You Have Successfully Bought  Monthly Recuring Voice+Data+SMS package" << endl;
+            cout << "Your Balance is now " << y - 1514 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+
+        else if (x == 1524)
+        {
+            cout << "Congratulations!!! You Have Successfully Bought Monthly Recuring Voice+Data package" << endl;
+            cout << "Your Balance is now " << y - 1524 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 1549)
+        {
+            cout << "Congratulations!!! You Have Successfully Bought Monthly Recuring Voice+Data package" << endl;
+            cout << "Your Balance is now " << y - 1549 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 1568)
+        {
+            cout << "Congratulations!!! You Have Successfully Bought Monthly Recuring Voice+Data package" << endl;
+            cout << "Your Balance is now " << y - 1568 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 1563)
+        {
+            cout << "Congratulations!!! You Have Successfully Bought Monthly Recuring Voice+Data package" << endl;
+            cout << "Your Balance is now " << y - 1563 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+
+        else if (x == 1)
+        {
+            recuring();
+        }
+        else if (x == 2)
+        {
+            ForYourself();
+        }
+        else if (x == 2)
+        {
+            services();
+        }
+        else if (x == 0)
+        {
+            Firstmenu();
+        }
+        else
+        {
+            cout << "__________Wrong input, please try again.__________" << endl;
+            MR_VoicePlusDataPack();
+        }
+    }
+    else
+    {
+        int c;
+        cout << "\n\tDear user your Balance is insufficient for this service. " << endl;
+        cout << "\t\tTo get CREDIT Please Enter '0': ";
+        cin >> c;
+        system("CLS");
+        if (c == 0)
+        {
+            credit();
+        }
+        else
+        {
+            cout << "\n\t\t\tTo go one  step back Enter '*'" << endl;
+            cout << "\t\t\tTo go two  steps back Enter '**'" << endl;
+            cout << "\t\t\tTo go three  steps back Enter '***'" << endl;
+            cout << "\t\t\tTo go back to the first menu Enter '0'" << endl;
+            cout << "Option: ";
+            cin >> x;
+            system("CLS");
+            if (x == 1)
+            {
+                Premium_Unlimited_Mobile_Package();
+            }
+            else if (x == 2)
+            {
+                ForYourself();
+            }
+            else if (x == 3)
+            {
+                services();
+            }
+            else if (x == 0)
+            {
+                Firstmenu();
+            }
+            else
+            {
+                cout << "__________Wrong input, please try again.__________" << endl;
+                Unlimited_Voice_Data_Package();
+            }
+        }
+    }
+}
