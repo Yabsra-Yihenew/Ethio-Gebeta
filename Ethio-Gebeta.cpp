@@ -5427,3 +5427,57 @@ void night_Data_pack()
         }
     }
 }
+
+void ForOfferingGift()
+{
+    string x;
+    cout << "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" << endl;
+    cout << "+++++++++++++++++++++++For Offering a Gift+++++++++++++++++++++++" << endl;
+    cout << "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" << endl;
+    cout << "1. Please Enter '1' Voice package" << endl;
+    cout << "2. Please Enter '2' Data package" << endl;
+    cout << "3. Please Enter '3' SMS package" << endl;
+    cout << "4. Please Enter '4' Flexi Mobile Package" << endl;
+    cout << "5. Please Enter '5' Mobile Voice + Data + SMS Package" << endl;
+    cout << "6. Please Enter '6' Premium Unlimited Mobile Packages" << endl;
+    cout << "To go back to the first menu Enter '*'" << endl;
+    cin >> x;
+    system("CLS");
+    if (x == "1")
+    {
+        Voice_Gift_Package();
+    }
+    else if (x == "2")
+    {
+        Data_Gift_Package();
+    }
+    else if (x == "3")
+    {
+        SMS_Gift_Package();
+    }
+    else if (x == "4")
+    {
+        Flexi_Gift_Mobile_Package();
+    }
+    else if (x == "5")
+    {
+        Mobile_VDS_Gift_Package();
+    }
+    else if (x == "6")
+    {
+        Premium_Unlimited_Mobile_Gift_Package();
+    }
+    else if (x == "*")
+    {
+        services();
+    }
+    else if (x == "0")
+    {
+        Firstmenu();
+    }
+    else
+    {
+        cout << "__________Wrong input, please try again.__________" << endl;
+        services();
+    }
+}
