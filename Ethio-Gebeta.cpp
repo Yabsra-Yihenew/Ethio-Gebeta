@@ -6365,3 +6365,19 @@ void daily_Gift_Voice_pack()
         }
     }
 }
+void weekly_Voice_Gift_pack()
+{
+    int x;
+    cout << "***********************************************" << endl;
+    cout << "********WEEKLY MOBILE VOICE GIFT PACKAGE*******" << endl;
+    cout << "***********************************************" << endl;
+    cout << "1.Enter '15' Birr 15 for 60 Min" << endl;
+    cout << "2.Enter '20' Birr 20 for 80 Min" << endl;
+    cout << "3.Enter '25' Birr 25 for 100 Min" << endl;
+    cout << "To go one  step back Enter '1'" << endl;
+    cout << "To go two  steps back Enter '2'" << endl;
+    cout << "To go three  steps back Enter '3'" << endl;
+    cout << "To go back to the first menu Enter '0'" << endl;
+    cout << "Option: ";
+    cin >> x;
+    system("CLS");
