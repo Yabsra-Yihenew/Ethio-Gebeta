@@ -6381,3 +6381,34 @@ void weekly_Voice_Gift_pack()
     cout << "Option: ";
     cin >> x;
     system("CLS");
+    if (y - x >= 0)
+    {
+        if (x == 15)
+        {
+            int num;
+            cout << "Please Provide the Phone number you are sending to" << endl;
+            cout << "+251 ";
+            cin >> num;
+            system("CLS");
+            if (num <= 999999999 && num >= 900000000)
+            {
+                cout << "you have successfully sent a gift to " << num << endl;
+                cout << "Your Balance is now " << y - 15 << " Birr" << endl;
+                int d;
+                cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+                cin >> d;
+                switch (d)
+                {
+                case 0:
+                    Firstmenu();
+                    break;
+                default:
+                    break;
+                }
+            }
+            else
+            {
+                cout << "Sorry this Number does not Exist, Please try again" << endl;
+                weekly_Voice_Gift_pack();
+            }
+        }
