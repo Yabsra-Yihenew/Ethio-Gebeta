@@ -5531,3 +5531,57 @@ void Voice_Gift_Package()
         Voice_Gift_Package();
     }
 }
+
+void Data_Gift_Package()
+{
+    string x;
+    cout << "::::::::::::::::::::::::::::::::::::::::::::::::" << endl;
+    cout << "::::::::::::::Mobile Data Package:::::::::::::::" << endl;
+    cout << "::::::::::::::::::::::::::::::::::::::::::::::::" << endl;
+    cout << "1.  Enter '1' For Daily Data Gift package" << endl;
+    cout << "2.  Enter '2' For Weekly Data Gift package" << endl;
+    cout << "3.  Enter '3' For Monthly Data Gift package" << endl;
+    cout << "4.  Enter '4' For Night Data Gift Package" << endl;
+    cout << "To go one  step back Enter '*'" << endl;
+    cout << "To go two  step back Enter '**'" << endl;
+    cout << "To go back to the first menu Enter '0'" << endl;
+    cin >> x;
+    system("CLS");
+    if (x == "1")
+    {
+        daily_Data_Gift_pack();
+    }
+    else if (x == "2")
+    {
+        weekly_Data_Gift_pack();
+    }
+    else if (x == "2")
+    {
+        weekend_Data_pack();
+    }
+    else if (x == "3")
+    {
+        monthly_Data_Gift_pack();
+    }
+    else if (x == "4")
+    {
+        night_Data_Gift_pack();
+    }
+    else if (x == "*")
+    {
+        ForOfferingGift();
+    }
+    else if (x == "**")
+    {
+        services();
+    }
+    else if (x == "0")
+    {
+        Firstmenu();
+    }
+    else
+    {
+        cout << "__________Wrong input, please try again.__________" << endl;
+        Data_Gift_Package();
+    }
+}
