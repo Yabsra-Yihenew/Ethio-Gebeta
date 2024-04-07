@@ -6146,3 +6146,51 @@ void Mobile_VDS_Gift_Package()
         Mobile_VDS_Gift_Package();
     }
 }
+void Premium_Unlimited_Mobile_Gift_Package()
+{
+    string x;
+    cout << "\t\tPremium Unlimited Mobile Gift Package" << endl;
+    cout << "1.  Enter '1' For Unlimited Data Gift Package" << endl;
+    cout << "2.  Enter '2' For Unlimited Voice Gift Package" << endl;
+    cout << "3.  Enter '3' For Unlimited Voice and Data Gift Package" << endl;
+    cout << "4.  Enter '4' For Premium Plus Monthly Mobile Plans" << endl;
+    cout << "To go one  step back Enter '*'" << endl;
+    cout << "To go two  step back Enter '**'" << endl;
+    cout << "To go back to the first menu Enter '0'" << endl;
+    cin >> x;
+    system("CLS");
+    if (x == "1")
+    {
+        Unlimited_Data_Gift_Package();
+    }
+    else if (x == "2")
+    {
+        Unlimited_Voice_Gift_Package();
+    }
+    else if (x == "3")
+    {
+        Unlimited_Voice_Data_Gift_Package();
+    }
+
+    else if (x == "4")
+    {
+        Premium_Plus_Monthly_Mobile_Gift_Plans();
+    }
+    else if (x == "*")
+    {
+        ForOfferingGift();
+    }
+    else if (x == "**")
+    {
+        services();
+    }
+    else if (x == "0")
+    {
+        Firstmenu();
+    }
+    else
+    {
+        cout << "__________Wrong input, please try again.__________" << endl;
+        Premium_Unlimited_Mobile_Gift_Package();
+    }
+}
