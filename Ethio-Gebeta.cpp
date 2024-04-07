@@ -5585,3 +5585,46 @@ void Data_Gift_Package()
         Data_Gift_Package();
     }
 }
+
+void SMS_Gift_Package()
+{
+    string x;
+    cout << "\t\tMobile SMS Package" << endl;
+    cout << "1.  Enter '1' For Daily SMS Gift package" << endl;
+    cout << "2.  Enter '2' For Weekly SMS Gift package" << endl;
+    cout << "3.  Enter '3' For Monthly SMS Gift package" << endl;
+    cout << "To go one  step back Enter '*'" << endl;
+    cout << "To go two  step back Enter '**'" << endl;
+    cout << "To go back to the first menu Enter '0'" << endl;
+    cin >> x;
+    system("CLS");
+    if (x == "1")
+    {
+        daily_SMS_Gift_pack();
+    }
+    else if (x == "2")
+    {
+        weekly_SMS_Gift_pack();
+    }
+    else if (x == "3")
+    {
+        monthly_SMS_Gift_pack();
+    }
+    else if (x == "*")
+    {
+        ForOfferingGift();
+    }
+    else if (x == "**")
+    {
+        services();
+    }
+    else if (x == "0")
+    {
+        Firstmenu();
+    }
+    else
+    {
+        cout << "__________Wrong input, please try again.__________" << endl;
+        SMS_Gift_Package();
+    }
+}
