@@ -6096,3 +6096,53 @@ void flexi_monthly_Gift_pack()
         }
     }
 }
+void Mobile_VDS_Gift_Package()
+{
+    string x;
+    cout << "======================================================================" << endl;
+    cout << "===============Mobile Voice, Data and SMS Gift Package================" << endl;
+    cout << "======================================================================" << endl;
+    cout << "1.  Enter '1' For Good Morning package" << endl;
+    cout << "2.  Enter '2' For Daily Voice, Data and SMS Gift package" << endl;
+    cout << "3.  Enter '3' For Weekly Voice, Data and SMS Gift package" << endl;
+    cout << "3.  Enter '4' For Monthly Voice, Data and SMS Gift package" << endl;
+    cout << "To go one  step back Enter '*'" << endl;
+    cout << "To go two  step back Enter '**'" << endl;
+    cout << "To go back to the first menu Enter '0'" << endl;
+    cin >> x;
+    system("CLS");
+    if (x == "1")
+    {
+        good_Morning_VDS_Gift_pack();
+    }
+    else if (x == "2")
+    {
+        daily_VDS_Gift_pack();
+    }
+    else if (x == "3")
+    {
+        weekly_VDS_Gift_pack();
+    }
+
+    else if (x == "4")
+    {
+        monthly_VDS_Gift_pack();
+    }
+    else if (x == "*")
+    {
+        ForOfferingGift();
+    }
+    else if (x == "**")
+    {
+        services();
+    }
+    else if (x == "0")
+    {
+        Firstmenu();
+    }
+    else
+    {
+        cout << "__________Wrong input, please try again.__________" << endl;
+        Mobile_VDS_Gift_Package();
+    }
+}
