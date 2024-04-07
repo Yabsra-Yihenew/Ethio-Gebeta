@@ -5628,3 +5628,46 @@ void SMS_Gift_Package()
         SMS_Gift_Package();
     }
 }
+
+void Flexi_Gift_Mobile_Package()
+{
+    string x;
+    cout << "Flexi Mobile Voice Package" << endl;
+    cout << "1.  Enter '1' For Flexi Daily Gift package" << endl;
+    cout << "2.  Enter '2' For Flexi Weekly Gift package" << endl;
+    cout << "3.  Enter '3' For Flexi Monthly Gift package" << endl;
+    cout << "To go one  step back Enter '*'" << endl;
+    cout << "To go two  step back Enter '**'" << endl;
+    cout << "To go back to the first menu Enter '0'" << endl;
+    cin >> x;
+    system("CLS");
+    if (x == "1")
+    {
+        flexi_daily_Gift_pack();
+    }
+    else if (x == "2")
+    {
+        flexi_weelky_Gift_pack();
+    }
+    else if (x == "3")
+    {
+        flexi_monthly_Gift_pack();
+    }
+    else if (x == "*")
+    {
+        ForOfferingGift();
+    }
+    else if (x == "**")
+    {
+        services();
+    }
+    else if (x == "0")
+    {
+        Firstmenu();
+    }
+    else
+    {
+        cout << "__________Wrong input, please try again.__________" << endl;
+        Flexi_Gift_Mobile_Package();
+    }
+}
