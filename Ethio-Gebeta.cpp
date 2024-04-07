@@ -7123,3 +7123,47 @@ if (y - x >= 0)
             night_Voice_Gift_pack();
         }
     }
+else
+    {
+        int c;
+        cout << "\n\tDear user your Balance is insufficient for this service. " << endl;
+        cout << "\t\tTo get CREDIT Please Enter '0': ";
+        cin >> c;
+        system("CLS");
+        if (c == 0)
+        {
+            credit();
+        }
+        else
+        {
+            cout << "\n\t\t\tTo go one  step back Enter '*'" << endl;
+            cout << "\t\t\tTo go two  steps back Enter '**'" << endl;
+            cout << "\t\t\tTo go three  steps back Enter '***'" << endl;
+            cout << "\t\t\tTo go back to the first menu Enter '0'" << endl;
+            cout << "Option: ";
+            cin >> x;
+            system("CLS");
+            if (x == 1)
+            {
+                Premium_Unlimited_Mobile_Package();
+            }
+            else if (x == 2)
+            {
+                ForYourself();
+            }
+            else if (x == 3)
+            {
+                services();
+            }
+            else if (x == 0)
+            {
+                Firstmenu();
+            }
+            else
+            {
+                cout << "__________Wrong input, please try again.__________" << endl;
+                Unlimited_Voice_Data_Package();
+            }
+        }
+    }
+}
