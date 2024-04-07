@@ -6996,3 +6996,130 @@ void night_Voice_Gift_pack()
     cout << "Option: ";
     cin >> x;
     system("CLS");
+if (y - x >= 0)
+    {
+        if (x == 5)
+        {
+            int num;
+            cout << "Please Provide the Phone number you are sending to" << endl;
+            cout << "+251 ";
+            cin >> num;
+            system("CLS");
+            if (num <= 999999999 && num >= 900000000)
+            {
+                cout << "you have successfully sent a gift to " << num << endl;
+                cout << "Your Balance is now " << y - 4 << " Birr" << endl;
+                int d;
+                cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+                cin >> d;
+                switch (d)
+                {
+                case 0:
+                    Firstmenu();
+                    break;
+                default:
+                    break;
+                }
+            }
+            else
+            {
+                cout << "Sorry this Number does not Exist, Please try again" << endl;
+                night_Voice_Gift_pack();
+            };
+        }
+        else if (x == 4)
+        {
+            cout << "Congratulations!!! You Have Successfully Bought Your Night Voice Package" << endl;
+            cout << "Your Balance is now " << y - 4 << " Birr. " << endl;
+            int d;
+            cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+            cin >> d;
+            switch (d)
+            {
+            case 0:
+                Firstmenu();
+                break;
+            default:
+                break;
+            }
+        }
+        else if (x == 6)
+        {
+            int num;
+            cout << "Please Provide the Phone number you are sending to" << endl;
+            cout << "+251 ";
+            cin >> num;
+            system("CLS");
+            if (num <= 999999999 && num >= 900000000)
+            {
+                cout << "you have successfully sent a gift to " << num << endl;
+                cout << "Your Balance is now " << y - 6 << " Birr" << endl;
+                int d;
+                cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+                cin >> d;
+                switch (d)
+                {
+                case 0:
+                    Firstmenu();
+                    break;
+                default:
+                    break;
+                }
+            }
+            else
+            {
+                cout << "Sorry this Number does not Exist, Please try again" << endl;
+                night_Voice_Gift_pack();
+            }
+        }
+        else if (x == 9)
+        {
+            int num;
+            cout << "Please Provide the Phone number you are sending to" << endl;
+            cout << "+251 ";
+            cin >> num;
+            system("CLS");
+            if (num <= 999999999 && num >= 900000000)
+            {
+                cout << "you have successfully sent a gift to " << num << endl;
+                cout << "Your Balance is now " << y - 9 << " Birr" << endl;
+                int d;
+                cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+                cin >> d;
+                switch (d)
+                {
+                case 0:
+                    Firstmenu();
+                    break;
+                default:
+                    break;
+                }
+            }
+            else
+            {
+                cout << "Sorry this Number does not Exist, Please try again" << endl;
+                night_Voice_Gift_pack();
+            }
+        }
+        else if (x == 1)
+        {
+            Voice_Gift_Package();
+        }
+        else if (x == 2)
+        {
+            ForOfferingGift();
+        }
+        else if (x == 3)
+        {
+            services();
+        }
+        else if (x == 0)
+        {
+            Firstmenu();
+        }
+        else
+        {
+            cout << "__________Wrong input, please try again.__________" << endl;
+            night_Voice_Gift_pack();
+        }
+    }
