@@ -7802,3 +7802,295 @@ void weekend_Data_Gift_pack()
         }
     }
 }
+
+void monthly_Data_Gift_pack()
+{
+    int x;
+    cout << "***********************************************" << endl;
+    cout << "********** MONTHLY MOBILE INTERNET GIFT PACKAGE  **********" << endl;
+    cout << "***********************************************" << endl;
+    cout << "1.Enter '40' Birr 40 for 500 MB" << endl;
+    cout << "2.Enter '75' Birr 75 for 1 GB" << endl;
+    cout << "3.Enter '130' Birr 130 for 2 GB" << endl;
+    cout << "4.Enter '250' Birr 250 for 4 GB" << endl;
+    cout << "5.Enter '450' Birr 450 for 8 GB" << endl;
+    cout << "6.Enter '520' Birr 520 for 10 GB" << endl;
+    cout << "7.Enter '890' Birr 890 for 20 GB" << endl;
+    cout << "To go one  step back Enter '1'" << endl;
+    cout << "To go two  steps back Enter '2'" << endl;
+    cout << "To go three  steps back Enter '3'" << endl;
+    cout << "To go back to the first menu Enter '0'" << endl;
+    cout << "Option: ";
+    cin >> x;
+    system("CLS");
+    if (y - x >= 0)
+    {
+        if (x == 40)
+        {
+            int num;
+            cout << "Please Provide the Phone number you are sending to" << endl;
+            cout << "+251 ";
+            cin >> num;
+            system("CLS");
+            if (num <= 999999999 && num >= 900000000)
+            {
+                cout << "you have successfully sent a gift to " << num << endl;
+                cout << "Your Balance is now " << y - 40 << " Birr" << endl;
+                int d;
+                cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+                cin >> d;
+                switch (d)
+                {
+                case 0:
+                    Firstmenu();
+                    break;
+                default:
+                    break;
+                }
+            }
+            else
+            {
+                cout << "Sorry this Number does not Exist, Please try again" << endl;
+                monthly_Data_Gift_pack();
+            }
+        }
+        else if (x == 75)
+        {
+            int num;
+            cout << "Please Provide the Phone number you are sending to" << endl;
+            cout << "+251 ";
+            cin >> num;
+            system("CLS");
+            if (num <= 999999999 && num >= 900000000)
+            {
+                cout << "you have successfully sent a gift to " << num << endl;
+                cout << "Your Balance is now " << y - 75 << " Birr" << endl;
+                int d;
+                cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+                cin >> d;
+                switch (d)
+                {
+                case 0:
+                    Firstmenu();
+                    break;
+                default:
+                    break;
+                }
+            }
+            else
+            {
+                cout << "Sorry this Number does not Exist, Please try again" << endl;
+                monthly_Data_Gift_pack();
+            }
+        }
+        else if (x == 130)
+        {
+            int num;
+            cout << "Please Provide the Phone number you are sending to" << endl;
+            cout << "+251 ";
+            cin >> num;
+            system("CLS");
+            if (num <= 999999999 && num >= 900000000)
+            {
+                cout << "you have successfully sent a gift to " << num << endl;
+                cout << "Your Balance is now " << y - 130 << " Birr" << endl;
+                int d;
+                cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+                cin >> d;
+                switch (d)
+                {
+                case 0:
+                    Firstmenu();
+                    break;
+                default:
+                    break;
+                }
+            }
+            else
+            {
+                cout << "Sorry this Number does not Exist, Please try again" << endl;
+                monthly_Data_Gift_pack();
+            }
+        }
+        else if (x == 250)
+        {
+            int num;
+            cout << "Please Provide the Phone number you are sending to" << endl;
+            cout << "+251 ";
+            cin >> num;
+            system("CLS");
+            if (num <= 999999999 && num >= 900000000)
+            {
+                cout << "you have successfully sent a gift to " << num << endl;
+                cout << "Your Balance is now " << y - 250 << " Birr" << endl;
+                int d;
+                cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+                cin >> d;
+                switch (d)
+                {
+                case 0:
+                    Firstmenu();
+                    break;
+                default:
+                    break;
+                }
+            }
+            else
+            {
+                cout << "Sorry this Number does not Exist, Please try again" << endl;
+                monthly_Data_Gift_pack();
+            }
+        }
+        else if (x == 450)
+        {
+            int num;
+            cout << "Please Provide the Phone number you are sending to" << endl;
+            cout << "+251 ";
+            cin >> num;
+            system("CLS");
+            if (num <= 999999999 && num >= 900000000)
+            {
+                cout << "you have successfully sent a gift to " << num << endl;
+                cout << "Your Balance is now " << y - 450 << " Birr" << endl;
+                int d;
+                cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+                cin >> d;
+                switch (d)
+                {
+                case 0:
+                    Firstmenu();
+                    break;
+                default:
+                    break;
+                }
+            }
+            else
+            {
+                cout << "Sorry this Number does not Exist, Please try again" << endl;
+                night_Data_Gift_pack();
+            }
+        }
+        else if (x == 520)
+        {
+            int num;
+            cout << "Please Provide the Phone number you are sending to" << endl;
+            cout << "+251 ";
+            cin >> num;
+            system("CLS");
+            if (num <= 999999999 && num >= 900000000)
+            {
+                cout << "you have successfully sent a gift to " << num << endl;
+                cout << "Your Balance is now " << y - 520 << " Birr" << endl;
+                int d;
+                cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+                cin >> d;
+                switch (d)
+                {
+                case 0:
+                    Firstmenu();
+                    break;
+                default:
+                    break;
+                }
+            }
+            else
+            {
+                cout << "Sorry this Number does not Exist, Please try again" << endl;
+                monthly_Data_Gift_pack();
+            }
+        }
+        else if (x == 890)
+        {
+            int num;
+            cout << "Please Provide the Phone number you are sending to" << endl;
+            cout << "+251 ";
+            cin >> num;
+            system("CLS");
+            if (num <= 999999999 && num >= 900000000)
+            {
+                cout << "you have successfully sent a gift to " << num << endl;
+                cout << "Your Balance is now " << y - 890 << " Birr" << endl;
+                int d;
+                cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+                cin >> d;
+                switch (d)
+                {
+                case 0:
+                    Firstmenu();
+                    break;
+                default:
+                    break;
+                }
+            }
+            else
+            {
+                cout << "Sorry this Number does not Exist, Please try again" << endl;
+                monthly_Data_Gift_pack();
+            }
+        }
+        else if (x == 1)
+        {
+            Data_Gift_Package();
+        }
+        else if (x == 2)
+        {
+            ForOfferingGift();
+        }
+        else if (x == 3)
+        {
+            services();
+        }
+        else if (x == 0)
+        {
+            Firstmenu();
+        }
+        else
+        {
+            cout << "__________Wrong input, please try again.__________" << endl;
+            monthly_Data_Gift_pack();
+        }
+    }
+    else
+    {
+        int c;
+        cout << "\n\tDear user your Balance is insufficient for this service. " << endl;
+        cout << "\t\tTo get CREDIT Please Enter '0': ";
+        cin >> c;
+        system("CLS");
+        if (c == 0)
+        {
+            credit();
+        }
+        else
+        {
+            cout << "\n\t\t\tTo go one  step back Enter '*'" << endl;
+            cout << "\t\t\tTo go two  steps back Enter '**'" << endl;
+            cout << "\t\t\tTo go three  steps back Enter '***'" << endl;
+            cout << "\t\t\tTo go back to the first menu Enter '0'" << endl;
+            cout << "Option: ";
+            cin >> x;
+            system("CLS");
+            if (x == 1)
+            {
+                Premium_Unlimited_Mobile_Package();
+            }
+            else if (x == 2)
+            {
+                ForYourself();
+            }
+            else if (x == 3)
+            {
+                services();
+            }
+            else if (x == 0)
+            {
+                Firstmenu();
+            }
+            else
+            {
+                cout << "__________Wrong input, please try again.__________" << endl;
+                Unlimited_Voice_Data_Package();
+            }
+        }
+    }
+}
