@@ -8436,3 +8436,267 @@ void good_Morning_VDS_Gift_pack()
         }
     }
 }
+
+void daily_VDS_Gift_pack()
+{
+    int x;
+    cout << "*************************************************************" << endl;
+    cout << "********** DAILY MOBILE VOICE+DATA+SMS GIFT PACKAGE**********" << endl;
+    cout << "*************************************************************" << endl;
+    cout << "1.Enter '12' Birr 12 for 10 SMS + 10 Min + 145 MB" << endl;
+    cout << "2.Enter '19' Birr 19 for 10 SMS + 35 Min + 145 MB" << endl;
+    cout << "3.Enter '29' Birr 29 for 10 SMS + 10 Min + 500 MB" << endl;
+    cout << "4.Enter '36' Birr 36 for 10 SMS + 35 Min + 500 GB" << endl;
+    cout << "5.Enter '46' Birr 46 for 10 SMS + 10 min + 1GB" << endl;
+    cout << "6.Enter '52' Birr 52 for 10 SMS + 35 min + 1 GB" << endl;
+    cout << "To go one  step back Enter '1'" << endl;
+    cout << "To go two  steps back Enter '2'" << endl;
+    cout << "To go three  steps back Enter '3'" << endl;
+    cout << "To go back to the first menu Enter '0'" << endl;
+    cout << "Option: ";
+    cin >> x;
+    system("CLS");
+    if (y - x >= 0)
+    {
+        if (x == 12)
+        {
+            int num;
+            cout << "Please Provide the Phone number you are sending to" << endl;
+            cout << "+251 ";
+            cin >> num;
+            system("CLS");
+            if (num <= 999999999 && num >= 900000000)
+            {
+                cout << "you have successfully sent a gift to " << num << endl;
+                cout << "Your Balance is now " << y - 12 << " Birr" << endl;
+                int d;
+                cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+                cin >> d;
+                switch (d)
+                {
+                case 0:
+                    Firstmenu();
+                    break;
+                default:
+                    break;
+                }
+            }
+            else
+            {
+                cout << "Sorry this Number does not Exist, Please try again" << endl;
+                daily_VDS_Gift_pack();
+            }
+        }
+        else if (x == 19)
+        {
+            int num;
+            cout << "Please Provide the Phone number you are sending to" << endl;
+            cout << "+251 ";
+            cin >> num;
+            system("CLS");
+            if (num <= 999999999 && num >= 900000000)
+            {
+                cout << "you have successfully sent a gift to " << num << endl;
+                cout << "Your Balance is now " << y - 19 << " Birr" << endl;
+                int d;
+                cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+                cin >> d;
+                switch (d)
+                {
+                case 0:
+                    Firstmenu();
+                    break;
+                default:
+                    break;
+                }
+            }
+            else
+            {
+                cout << "Sorry this Number does not Exist, Please try again" << endl;
+                daily_VDS_Gift_pack();
+            }
+        }
+        else if (x == 29)
+        {
+            int num;
+            cout << "Please Provide the Phone number you are sending to" << endl;
+            cout << "+251 ";
+            cin >> num;
+            system("CLS");
+            if (num <= 999999999 && num >= 900000000)
+            {
+                cout << "you have successfully sent a gift to " << num << endl;
+                cout << "Your Balance is now " << y - 29 << " Birr" << endl;
+                int d;
+                cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+                cin >> d;
+                switch (d)
+                {
+                case 0:
+                    Firstmenu();
+                    break;
+                default:
+                    break;
+                }
+            }
+            else
+            {
+                cout << "Sorry this Number does not Exist, Please try again" << endl;
+                daily_VDS_Gift_pack();
+            }
+        }
+        else if (x == 36)
+        {
+            int num;
+            cout << "Please Provide the Phone number you are sending to" << endl;
+            cout << "+251 ";
+            cin >> num;
+            system("CLS");
+            if (num <= 999999999 && num >= 900000000)
+            {
+                cout << "you have successfully sent a gift to " << num << endl;
+                cout << "Your Balance is now " << y - 36 << " Birr" << endl;
+                int d;
+                cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+                cin >> d;
+                switch (d)
+                {
+                case 0:
+                    Firstmenu();
+                    break;
+                default:
+                    break;
+                }
+            }
+            else
+            {
+                cout << "Sorry this Number does not Exist, Please try again" << endl;
+                daily_VDS_Gift_pack();
+            }
+        }
+        else if (x == 46)
+        {
+            int num;
+            cout << "Please Provide the Phone number you are sending to" << endl;
+            cout << "+251 ";
+            cin >> num;
+            system("CLS");
+            if (num <= 999999999 && num >= 900000000)
+            {
+                cout << "you have successfully sent a gift to " << num << endl;
+                cout << "Your Balance is now " << y - 46 << " Birr" << endl;
+                int d;
+                cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+                cin >> d;
+                switch (d)
+                {
+                case 0:
+                    Firstmenu();
+                    break;
+                default:
+                    break;
+                }
+            }
+            else
+            {
+                cout << "Sorry this Number does not Exist, Please try again" << endl;
+                monthly_VDS_Gift_pack();
+            }
+        }
+        else if (x == 52)
+        {
+            int num;
+            cout << "Please Provide the Phone number you are sending to" << endl;
+            cout << "+251 ";
+            cin >> num;
+            system("CLS");
+            if (num <= 999999999 && num >= 900000000)
+            {
+                cout << "you have successfully sent a gift to " << num << endl;
+                cout << "Your Balance is now " << y - 52 << " Birr" << endl;
+                int d;
+                cout << "\n1.Enter '0' to buy another package\n2.Enter any key for 'EXIT'" << endl;
+                cin >> d;
+                switch (d)
+                {
+                case 0:
+                    Firstmenu();
+                    break;
+                default:
+                    break;
+                }
+            }
+            else
+            {
+                cout << "Sorry this Number does not Exist, Please try again" << endl;
+                daily_VDS_Gift_pack();
+            }
+        }
+
+        else if (x == 1)
+        {
+            Mobile_VDS_Gift_Package();
+        }
+        else if (x == 2)
+        {
+            ForOfferingGift();
+        }
+        else if (x == 3)
+        {
+            services();
+        }
+        else if (x == 0)
+        {
+            Firstmenu();
+        }
+        else
+        {
+            cout << "__________Wrong input, please try again.__________" << endl;
+            daily_VDS_Gift_pack();
+        }
+    }
+    else
+    {
+        int c;
+        cout << "\n\tDear user your Balance is insufficient for this service. " << endl;
+        cout << "\t\tTo get CREDIT Please Enter '0': ";
+        cin >> c;
+        system("CLS");
+        if (c == 0)
+        {
+            credit();
+        }
+        else
+        {
+            int x;
+            cout << "\n\t\t\tTo go one  step back Enter '*'" << endl;
+            cout << "\t\t\tTo go two  steps back Enter '**'" << endl;
+            cout << "\t\t\tTo go three  steps back Enter '***'" << endl;
+            cout << "\t\t\tTo go back to the first menu Enter '0'" << endl;
+            cout << "Option: ";
+            cin >> x;
+            system("CLS");
+            if (x == 1)
+            {
+                Premium_Unlimited_Mobile_Package();
+            }
+            else if (x == 2)
+            {
+                ForYourself();
+            }
+            else if (x == 3)
+            {
+                services();
+            }
+            else if (x == 0)
+            {
+                Firstmenu();
+            }
+            else
+            {
+                cout << "__________Wrong input, please try again.__________" << endl;
+                Unlimited_Voice_Data_Package();
+            }
+        }
+    }
+}
